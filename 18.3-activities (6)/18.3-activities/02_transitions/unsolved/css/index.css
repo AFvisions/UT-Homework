@@ -1,0 +1,34 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  color: white;
+  grid-template-areas:
+    "hover"
+    "disabled"
+  ;
+  height: 500px;
+}
+
+.hoverMe {
+  grid-area: hover;
+  background-color: red;
+  color: white;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+  /* Add the css property transition here! */
+  transition: 0.9s ease-in-out;
+}
+
+/* active state */
+.hoverMe:hover {
+  /* Add your hover state css here. */
+  background-color: brown;
+  border: 6px;
+  border-color: rgb(255, 255, 255);
+  border-style: dashed
+}
